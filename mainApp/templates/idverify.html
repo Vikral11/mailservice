@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+
+		}
+		label{
+			margin-bottom: 20px;
+		}
+
+	</style>
+</head>
+<body style="background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);">
+	<center><h1 style="background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);">Send Anonymous Mails</h1></center>
+<div style="height: 80%;width:70%;margin-left: 15%;margin-top: 5%;padding: 2%;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);">
+	<form method= "post" >
+        {% csrf_token %}
+		<label>Enter the otp sent on your mail-id :<input type="text" name="OTP" value="" style="/* From https://css.glass */
+			background: rgba(148, 206, 201, 0.16);
+			border-radius: 6px;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5),0 4px 30px rgba(51, 47, 47, 0.3);
+			backdrop-filter:saturate(180%) blur(6.9px);
+			-webkit-backdrop-filter: saturate(180%) blur(6.9px);
+			border: 2px solid rgba(148, 206, 201, 1);padding: .5%;"></label>
+		<br>
+		<br>
+		
+		<input type="submit" name="" value="Hit Me To Send" style="padding: 3px; border-radius:5px; border:1px solid #00C9FF;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5),0 4px 30px rgba(51, 47, 47, 0.3);">
+	</form>
+</div>
+	
+	
+	
+</body></html>
